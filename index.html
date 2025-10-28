@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社SUCCESS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;500&family=Shippori+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/index.html" class="logo">
+                <img src="./img/logo.svg" alt="株式会社SUCCESS ロゴ" width="400">
+            </a>
+
+            <nav class="global-nav">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">メニュー</button>
+                <ul id="main-nav" class="nav-list">
+                    <li><a href="#hero">TOP</a></li>
+                    <li><a href="#strength">SUCCESSについて</a></li>
+                    <li><a href="#voice">先輩の声</a></li>
+                    <li><a href="#recruitment">募集要項</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#form" class="btn header-btn">エントリーする</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+      <!-- hero -->
+      <section id="hero" class="hero">
+        <video
+            class="hero__video"
+            autoplay
+            muted
+            playsinline
+            loop
+            preload="metadata"
+            poster="./img/video.svg"
+            aria-hidden="true"
+          >
+            <source src="./video/hero_mov.webm" type="video/webm" />
+            <source src="./video/hero_mov.mp4" type="video/mp4" />
+            <img src="./img/video.svg" alt="背景画像の代替表示" style="width:100%;height:auto;object-fit:cover;">
+        </video>
+        <div class="hero-inner container">
+          <h1 class="hero-title">
+            <img src="./img/SUCCESS.svg" alt="企業ロゴ">
+          </h1>
+          <h2 class="hero-subtitle shippori-antique-regular">
+            信頼×技術力で<br>
+            あなたの<span class="bg-yellow">未来</span>も本気で考えるIT会社
+          </h2>
+          <a href="#form" class="btn hero-btn">エントリーする</a>
+        </div>
+      </section>
+
+      <!-- worry -->
+      <section id="worry" class="worry section">
+        <div class="container">
+          <div class="worry-inner">
+            <h2 class="worry-title title">未経験でエンジニアって・・・・・</h2>
+            <div class="worry-box">
+              <div><img src="./img/worry-1.svg" alt="キャリアに悩む男性の画像"></div>
+              <p class="worry-box-text">ずっと同じ作業でキャリアアップしにくい？</p>
+            </div>
+            <div class="worry-box reverse">
+              <div><img src="./img/worry-2.svg" alt="お金がなくて悲しむ男性の画像"></div>
+              <p class="worry-box-text">頑張っても給料が上がらない？</p>
+            </div>
+            <div class="worry-box">
+              <div><img src="./img/worry-3.svg" alt="自分の時間がなくて焦る女性の画像"></div>
+              <p class="worry-box-text">残業が多そう・・・</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- development  -->
+      <section id="development" class="development section">
+        <div class="container">
+          <h2 class="development-title title">SUCCESSならこんなに成長できる</h1>
+          <div class="chart-box">
+            <div id="chart-container-before" class="chart"></div>
+            <div id="chart-container-after" class="chart"></div>
+          </div>
+          <div class="chart-box bottom">
+            <div class="chart-box-img"><img src="./img/dev-girl.svg" alt="チャートを指す女性の画像"></div>
+            <div>
+              <h3 class="development-subtitle">
+                6割が<span class="blue">未経験</span>入社。<br>
+                スキルレベルは<span class="red">毎年向上</span>。
+              </h3>
+              <p class="development-text">
+                私たちは社員のキャリアアップに本気で取り組む
+                インフラ特化型<span class="blue">SES企業</span>です。
+              </p>
+              <p class="development-text">
+                多くの社員が未経験から入社していますが、
+                2025年にはミドルスキル※以上の社員が54％に達し、
+                <span class="blue">会社全体が成長</span>し続けています。
+              </p>
+              <p class="development-text annotation">
+                ※ ミドルスキル　 構築＋運用設計ができるレベル<br>
+                ※ ハイスキル　　要件定義＋設計ができるレベル
+              </p>
+            </div>
+          </div>
+          <div class="card point-box">
+            <div class="point-box-img"><img src="./img/point.svg" alt="pointと言いながら指を立てる女性の画像"></div>
+            <div class="point-text-box">
+              <h4 class="card-title">SESとは</h4>
+              <p>
+                エンジニアがお客様の現場に常駐して、システム開発や運用などのIT業務を行うサービスです。会社の適切なバックアップがあれば、未経験でも現場で学びながら実践的なスキルを磨ける働き方です。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- strength -->
+      <section id="strength" class="strength section">
+        <div class="container">
+          <div class="strength-inner">
+          <h2 class="strength-title title">SUCCESSの強み</h2>
+            <div class="strength-box reverse">
+              <div class="strength-text-box">
+                <h3 class="strength-box-title">信頼があるから、挑戦できる</h3>
+                <p class="strength-box-text">
+                  SUCCESSは2025年に創業38周年を迎えました。<br>
+                  その確かな技術力から、大手企業を中心に高い信頼をいただいており、<br>
+                  だからこ未経験でも挑戦的なプロジェクトに参加することができます。
+                </p>
+              </div>
+              <div class="strength-box-img"><img src="./img/uketsuke.png" alt="受付の画像"></div>
+            </div>
+            <div class="strength-box">
+              <div class="strength-reverse">
+                <h3 class="strength-box-title">残業は少なく、学びサポートは手厚く</h3>
+                <p class="strength-box-text">
+                  残業時間は多い時で月約20時間です。年間休日は120日以上。<br>
+                  有給休暇や産休・育休の取得も推奨しています。<br>
+                  入社後はいきなり業務に入るのではなく、1ヵ月（中途）～3ヵ月（新卒）の業務研修で基礎知識を身に着けていただきます。<br>
+                  また、資格取得や勉強のための教材費用は会社が負担します。
+                  もちろん各種資格手当もございます。
+                </p>
+              </div>
+              <div class="strength-box-img"><img src="./img/support (2).png" alt="社員の画像"></div>
+            </div>
+            <div class="strength-box reverse">
+              <div class="strength-text-box">
+                <h3 class="strength-box-title">本当に相談しやすい環境</h3>
+                <p class="strength-box-text">
+                  SUCCESSでの相談は、キャリア面談だけではありません。<br>
+                  常に社員が悩みを相談できる環境を整えています。常駐先でも、定期的に営業担当の訪問がある他、外部機関所属のキャリアカウンセラーや代表と直接話すことも可能です。<br>
+                  また、全社員がチャットで連絡を取りあっており、業務上の課題もスムーズに解決できます。
+                </p>
+              </div>
+              <div class="strength-box-img"><img src="./img/office.png" alt="オフィスの画像"></div>
+            </div>
+          </div>
+          <div class="button-box"><a href="#" class="btn btn-entry">エントリーする</a></div>
+        </div>
+      </section>
+
+      <!-- career -->
+      <section id="career" class="career section">
+        <div class="container">
+          <h2 class="career-title title">キャリアパスの例</h2>
+          <p class="career-text">キャリアカウンセリングを通して、一人一人に合った成長を支援します。</p>
+          <div class="career-cards">
+            <div class="card career-card">
+              <div class="career-card-icon"><img src="./img/badge01.svg" alt=""></div>
+              <p class="career-card-num">入社後</p>
+              <h3 class="career-card-title">研修</h3>
+              <p class="career-card-flow">しっかり研修で安心</p>
+              <p class="career-card-detail">
+                ・ITインフラ基礎<br>
+                ・サーバー・ネットワーク基礎<br>
+                ・ビジネスマナー（新卒）<br>
+              </p>
+            </div>
+            <div class="card career-card">
+              <div class="career-card-icon"><img src="./img/badge02.svg" alt=""></div>
+              <p class="career-card-num">1年目</p>
+              <h3 class="career-card-title">基礎固め</h3>
+              <p class="career-card-flow">ヘルプデスクで知識を本物に</p>
+              <p class="career-card-detail">
+                ・ヘルプデスク<br>
+                ・インフラ運用・保守<br>
+                ・サーバー・ネットワーク基礎<br>
+              </p>
+            </div>
+            <div class="card career-card">
+              <div class="career-card-icon"><img src="./img/badge03.svg" alt=""></div>
+              <p class="career-card-num">2~3年目</p>
+              <h3 class="career-card-title">実践</h3>
+              <p class="career-card-flow">エンジニアとして活躍</p>
+              <p class="career-card-detail">
+                ・既存業務のメインメンバー<br>
+                ・リーダー補佐<br>
+              </p>
+            </div>
+            <div class="card career-card">
+              <div class="career-card-icon"><img src="./img/badge04.svg" alt=""></div>
+              <p class="career-card-num">4年目</p>
+              <h3 class="career-card-title">応用</h3>
+              <p class="career-card-flow">より上流へ</p>
+              <p class="career-card-detail">
+                ・新規業務のメインメンバー<br>
+                ・プロジェクトリーダー<br>
+                ・専門資格の取得<br>
+              </p>
+            </div>
+          </div>
+          <div class="high-career-cards">
+            <div class="card career-card-high">
+              <div class="career-card-top">
+                <div><img src="./img/badge05.svg" alt=""></div>
+                <h3 class="career-card-title">営業</h3>
+              </div>
+              <p class="career-card-text">
+                キャリア相談の中で、エンジニアから営業に転身した社員もおります。
+              </p>
+            </div>
+            <div class="card career-card-high">
+              <div class="career-card-top">
+                <div><img src="./img/badge06.svg" alt=""></div>
+                <h3 class="career-card-title">マネジメント</h3>
+              </div>
+              <p class="career-card-text">
+                経験やご希望に応じて、お客様対応やチームマネジメントといったスキルも身に着けることができます。
+              </p>
+            </div>
+          </div>
+          <p class="career-text">図はあくまで一例です。入社後はぜひあなたのなりたい姿やキャリアのイメージをお聞かせください。</p>
+          <div class="career-img"><img src="./img/Frame 26.svg" alt=""></div>
+        </div>
+       </section>
+
+       <!-- voice -->
+      <section id="voice" class="voice section">
+        <div class="container">
+          <h2 class="voice-title title">先輩たちの声</h2>
+          <div class="voices">
+            <div class="voice-box">
+              <div class="voice-box-img"><img src="./img/Frame 26.svg" alt=""></div>
+              <p class="voice-box-name">新卒採用 Aさん</p>
+              <div class="voice-box-caption">
+                <h3 class="voice-box-title">安心して相談できる雰囲気が<br>背中を押してくれます。</h3>
+                <p class="voice-box-text">
+                  社員の方々の交流が多く、なんでもも気軽に相談できる和やかな空気が気に入っています。
+                </p>
+              </div>
+              <div class="voice-box-caption">
+                <h3 class="voice-box-title">入社の決め手</h3>
+                <p class="voice-box-text">
+                  一番の着眼点は、給与面や土日祝が休み、県外転勤なしなど安定して働けそうな条件が揃っていたからです。
+                </p>
+              </div>
+              <div class="voice-box-caption">
+                <h3 class="voice-box-title">SUCCESSの良いところ</h3>
+                <p class="voice-box-text">
+                  給与面と、土日が休み、県外転勤なしなど安定して働けそうな条件が揃っていたからです。
+                </p>
+              </div>
+            </div>
+            <div class="voice-box">
+              <div class="voice-box-img"><img src="./img/Frame 26.svg" alt=""></div>
+              <p class="voice-box-name">新卒採用 Bさん</p>
+              <div class="voice-box-caption">
+                <h3 class="voice-box-title">安定があるから変化を楽しめる</h3>
+                <p class="voice-box-text">
+                  入社10年目ですが、安定した生活を送れています。エンジニアから営業への転身や、子どもができたりなど、仕事やライフスタイルの変化もこの生活があるからこそ楽しめています。
+                </p>
+              </div>
+              <div class="voice-box-caption">
+                <h3 class="voice-box-title">入社の決め手</h3>
+                <p class="voice-box-text">
+                  職業訓練の会社説明会がきっかけです。元々は開発志望でしたが、インフラエンジニアの方が長く安定した収入があると説明を受け、社歴の長さから説得力を感じ入社しました。
+                </p>
+              </div>
+              <div class="voice-box-caption">
+                <h3 class="voice-box-title">SUCCESSの良いところ</h3>
+                <p class="voice-box-text">
+                  SESでも社員同士のつながりがあり、一緒に楽しめる仲間がいるところ。相談に対して会社が親身になって応じてくれるところです。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="suitable-box">
+            <h3 class="suitable-title">先輩達へのインタビュー</h3>
+            <div class="video">
+              <iframe
+                width="840"
+                height="472"
+                src="https://www.youtube.com/embed/MsRmLnJjsy8?si=eZrV1t9D0X1Hc3PH"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- recruitment -->
+      <section id="recruitment" class="recruitment section">
+        <div class="container">
+          <h2 class="recruitment-title title">募集要項</h2>
+          <table class="recruitment-table">
+              <tr>
+                  <th>募集職種</th>
+                  <td>
+                      <div class="position-title">システムエンジニア、システム運用オペレーター</div>
+                  </td>
+              </tr>
+              <tr>
+                  <th>給与・待遇 正社員（年俸制）</th>
+                  <td>
+                      <div class="salary-item">正社員（年俸制）</div>
+                      <div class="salary-item">高卒　　　　23万円</div>
+                      <div class="salary-item">専門・高等卒　24万円</div>
+                      <div class="salary-item">大卒　　　　25万円</div>
+                      <div class="salary-item">中途入社　　23万円（未経験者のみ、経験者は要相談…）</div>
+                      <div class="salary-item">試用期間：無し</div>
+                      <div class="salary-item">昇給年一回、時間外手当、休日勤務手当</div>
+                  </td>
+              </tr>
+              <tr>
+                  <th>休日・休暇</th>
+                  <td>
+                      <div class="salary-item">完全週休2日、国民の休日、年末年始</div>
+                      <div class="salary-item">年間休日120日以上</div>
+                      <div class="note">有給休暇（初年度10日）、夏季休暇、年末年始休暇、慶弔休暇、産前産後休暇、など</div>
+                  </td>
+              </tr>
+              <tr>
+                  <th>勤務時間</th>
+                  <td>
+                      <div class="salary-item">9:00-18:00</div>
+                      <div class="sub-text">※希望先により変動あり</div>
+                  </td>
+              </tr>
+              <tr>
+                  <th>勤務地</th>
+                  <td>本社または常駐先</td>
+              </tr>
+              <tr>
+                  <th>福利厚生</th>
+                  <td>
+                      <div class="benefit-item">定期健康診断（基本健診、希望者は人間ドック）</div>
+                      <div class="benefit-item">健康会館</div>
+                      <div class="benefit-item">社員旅行（家族参加OK）</div>
+                      <div class="benefit-item">資格取得支援金制度</div>
+                      <div class="benefit-item">社保完備（健保、厚生年金、雇用保険、労災保険）</div>
+                      <div class="benefit-item">慶弔金支給</div>
+                      <div class="benefit-item">保育組合契約保養施設、スポーツ施設、レストラン等の優待利用</div>
+                  </td>
+              </tr>
+              <tr>
+                  <th>募集人数</th>
+                  <td>
+                      <div class="salary-item">新卒：4名</div>
+                      <div class="salary-item">既卒：複数名</div>
+                  </td>
+              </tr>
+              <tr>
+                  <th>募集の背景</th>
+                  <td>業務拡大につき増員募集をいたします。</td>
+              </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- flow -->
+      <section id="flow" class="flow section">
+        <div class="tri-top"><img src="./img/tri-wh.svg" alt=""></div>
+        <div class="container">
+          <h2 class="flow-title title">採用フロー</h2>
+          <div class="steps">
+            <div class="step-box">
+              <p class="step-box-top">STEP1</p>
+              <div class="step-box-img"><img src="./img/flow1.svg" alt=""></div>
+              <h3 class="step-box-title">エントリー</h3>
+              <p class="step-box-text">
+                フォームよりご応募ください。<br>
+                後ほど弊社より連絡いたします。
+              </p>
+            </div>
+            <div class="step-box">
+              <p class="step-box-top">STEP2</p>
+              <div class="step-box-img"><img src="./img/flow2.svg" alt=""></div>
+              <h3 class="step-box-title">筆記試験 ＋ 面接</h3>
+              <p class="step-box-text">
+                面接は社長との1回のみです。
+                
+              </p>
+            </div>
+            <div class="step-box">
+              <p class="step-box-top">STEP3</p>
+              <div class="step-box-img"><img src="./img/flow3.svg" alt=""></div>
+              <h3 class="step-box-title">結果通知</h3>
+              <p class="step-box-text">
+                面接実施日より、最短3日でご連絡いたします。
+              </p>
+            </div>
+          </div>
+          <div class="button-box"><a href="#" class="btn btn-entry">エントリーする</a></div>
+        </div>
+      </section>
+
+      <!-- faq -->
+      <section id="faq" class="faq section">
+        <div class="tri-top"><img src="./img/tri-bl.svg" alt=""></div>
+        <div class="container">
+          <div class="faq-inner">
+            <h2 class="faq-title title">FAQ</h2>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>インフラエンジニアとはなんですか？</summary>
+                <p>インターネットに必要なシステム（サーバー、ネットワーク、クラウドなど）を設計、構築、運用する専門エンジニアの総称です。</p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>入社後の研修はどのように行いますか？</summary>
+                <p>新卒の方には入社から3ヵ月間ビジネスマナーも含めた研修を、中途の方には1か月間インフラに特化した研修をご用意しております。</p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>年間の有休消化はどのくらいですか？</summary>
+                <p>年間平均14日程度です。</p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>最初に携わる仕事を教えてください。</summary>
+                <p>A常駐先によりますが、未経験の場合はサーバーに関するヘルプデスクの仕事や、サーバー運用を行います。ゆくゆくはクラウドの設計構築などにも携わっていただきます。</p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>どんな人が向いていますか？</summary>
+                <p>A知識に対して素直で、向上心のある方はキャリアアップにスピード感があります。バックグラウンドは特にこだわりません。弊社には文系や他業界から未経験で入社し、エンジニアとして最前線で活躍している社員も多数おります。</p>
+            </details>
+        
+            <button class="btn more-btn" id="moreButton">さらに見る</button>
+
+
+            <!-- <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>文系出身でも応募は可能ですか。</summary>
+                <p>もちろん可能です。弊社には文系や他業界から未経験で入社し、エンジニアとして最前線で活躍している社員も多数おります。</p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>貴社では女性はどのように活躍していますか？</summary>
+                <p>代表取締役社長が女性であり、その他経理1名、エンジニアが5名とまだ少ないですが、働きやすい環境を整えています。産休や育休も問題なく取得いただけます。</p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>イチオシの福利厚生について教えてください。</summary>
+                <p>定期健康診断の際に希望者は人間ドックを受診できます！そのほかご家族参加OKの社員旅行や、社内スポーツイベントなども企画しております。</p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>社員の平均年齢は何歳ですか？</summary>
+                <p>現在の平均年齢は37歳です。</p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>貴社で働く未経験の方の前職を教えてください。</summary>
+                <p>営業・介護士・美容師・フリーカメラマンなど、幅広い方が未経験から転職してエンジニアとして働いています。</p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>主な常駐先はどのあたりですか？</summary>
+                <p>多くは都内近郊ですが、自宅から無理のない範囲で通える先をヒアリングして決めていきます。</p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>出社とリモートワークの割合を教えてください。</summary>
+                <p>
+                  ヘルプデスクをお任せする場合は出社が中心となり、サーバー構築の案件ではリモート勤務もあります。
+                  あくまで常駐先現場の方針によるため、案件によって様々です。
+                </p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>貴社で取得を推奨している資格はありますか。</summary>
+                <p></p>
+            </details>
+            <details class="accordion-001">
+                <summary><span class="q"><img src="./img/question.svg" alt=""></span>SUCCESSと他のSES企業との違いを教えてください。</summary>
+                <p>技術力の高さはもちろん、大手企業顧客からの信頼と、社員のキャリア支援力には自信があります。　</p>
+            </details> -->
+            <div class="popup-overlay" id="popupOverlay">
+              <div class="popup-content">
+                  <button class="close-button" id="closeButton">×</button>
+                  <h2 class="popup-title title">FAQ</h2>
+
+                  <div class="items-grid">
+                      <div class="item">
+                        <h2 class="item-title">貴社では女性はどのように活躍していますか？</h2>
+                        <p class="item-text">代表取締役社長が女性であり、その他経理1名、営業１名、エンジニアが5名とまだ少ないですが、働きやすい環境を整えています。産休や育休も問題なく取得いただけます。</p>
+                      </div>
+                      <div class="item">
+                        <h2 class="item-title">イチオシの福利厚生について教えてください。</h2>
+                        <p class="item-text">定期健康診断の際に希望者は人間ドックを受診できます！そのほかご家族参加OKの社員旅行や、社内スポーツイベントなども企画しております。</p>
+                      </div>
+                      <div class="item">
+                        <h2 class="item-title">社員の平均年齢は何歳ですか？</h2>
+                        <p class="item-text">現在の平均年齢は37歳です。</p>
+                      </div>
+                      <div class="item">
+                        <h2 class="item-title">平均勤続年数を教えてください。</h2>
+                        <p class="item-text">約15年です。</p>
+                      </div>
+                      <div class="item">
+                        <h2 class="item-title">貴社で働く未経験の方の前職を教えてください。</h2>
+                        <p class="item-text">営業・介護士・美容師・フリーカメラマンなど、幅広い方が未経験から転職してエンジニアとして働いています。</p>
+                      </div>
+                      <div class="item">
+                        <h2 class="item-title">主な常駐先はどのあたりですか？</h2>
+                        <p class="item-text">多くは都内近郊ですが、自宅から無理のない範囲で通える先をヒアリングして決めていきます。</p>
+                      </div>
+                      <div class="item">
+                        <h2 class="item-title">常駐先の企業はどんな企業ですか？</h2>
+                        <p class="item-text">信頼関係のある大手企業様がほとんどです。弊社のチームがすでに常駐している現場へ入っていただくことが多いため、安心して業務に集中できます。</p>
+                      </div>
+                      <div class="item">
+                        <h2 class="item-title">出社とリモートワークの割合を教えてください。</h2>
+                        <p class="item-text">ヘルプデスクをお任せする場合は出社が中心となり、サーバー構築の案件ではリモート勤務もあります。あくまで常駐先現場の方針によるため、案件によって様々です。</p>
+                      </div>
+                      <div class="item">
+                        <h2 class="item-title">SUCCESSと他のSES企業との違いを教えてください。</h2>
+                        <p class="item-text">技術力の高さはもちろん、大手企業顧客からの信頼の高さと、社員のキャリア支援力には自信があります。</p>
+                      </div>
+                      <div class="item">
+                        <h2 class="item-title">離職率は低いですか？</h2>
+                        <p class="item-text">弊社の離職率は4%程度です。業界平均（20%前後）と比べて低いかと思います。</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- form -->
+      <section id="form" class="form section">
+        <div class="tri-top"><img src="./img/tri-sb.svg" alt=""></div>
+        <div class="container">
+          <div class="form-container a">
+            <h2 class="form-title title">エントリーフォーム</h2>
+            <p class="form-text">まずはエントリー。少しでも興味を持ったら、お気軽にお問い合わせください。</p>
+            <form id="entryForm">
+                <div class="form-group">
+                    <label for="name">氏名<span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">電話番号<span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required placeholder="090-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label>採用種別<span class="required">*</span></label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="newGrad" name="employmentType" value="新卒採用" required>
+                            <label for="newGrad">新卒採用</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="midCareer" name="employmentType" value="中途採用">
+                            <label for="midCareer">中途採用</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="other" name="employmentType" value="その他">
+                            <label for="other">その他</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">件名</label>
+                    <input type="text" id="subject" name="subject" readonly placeholder="採用種別を選択してください">
+                </div>
+                <div class="form-group">
+                    <label for="reason">エントリー理由<span class="required">*</span></label>
+                    <textarea id="reason" name="reason" required placeholder="エントリー理由をご記入ください"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">送信する</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- message -->
+      <section id="message" class="message section">
+        <div class="container">
+          <div class="message-box">
+            <h2 class="message-box-title">海野代表からメッセージ</h2>
+            <div class="message-box-caption">
+              <div class="message-box-img">
+                <img src="./img/ceo.svg" alt="社長のイラスト">
+              </div>
+              <p class="message-box-text">
+                「信頼できる技術サービスを提供し、社会に貢献する企業であること」<br>
+                私たちはこの信念とまっすぐに向き合い、お客様はもちろん、まずは社内で信頼関係ができる環境づくりを大切にしています。
+                頑張った分だけ本当に評価される会社です。私もアルバイトから代表になりました。<br>
+                一緒に働ける方のご応募をぜひお待ちしております！
+              </p>
+            </div>
+          </div>
+          <div class="message-outer">
+            <p class="message-outer-text">皆さんとお会いできるのを<br>楽しみにしています！</p>
+            <div class="message-outer-img"><img src="./img/message-outer.svg" alt=""></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="links">
+        <a class="sns-box">
+          <div class="sns-icon"><img src="./img/Line.svg" alt=""></div>
+          <div class="sns-caption">
+            <p class="sns-text line">無料キャリア相談実施中！</p>
+            <h3 class="sns-title line">公式LINE</h3>
+          </div>
+        </a>
+        <a class="sns-box">
+          <div class="sns-icon"><img src="./img/note.svg" alt=""></div>
+          <div class="sns-caption">
+            <p class="sns-text">IT技術コラム配信中！</p>
+            <h3 class="sns-title">公式note</h3>
+          </div>
+        </a>
+        <a href="https://newsuccess.hatenablog.com/" class="sns-box">
+          <div class="sns-icon"><img src="./img/blog.svg" alt=""></div>
+          <div class="sns-caption">
+            <p class="sns-text">会社の雰囲気をお伝え！</p>
+            <h3 class="sns-title">社長ブログ</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="information">
+        <div class="information-1">
+          <h3 class="information-title"><img src="./img/wh_logo 2.svg" alt="企業ロゴ"></h3>
+          <p class="information-text">〒141-0031</p>
+          <p class="information-text">
+            東京都品川区西五反田2丁目12番3号<br>
+            第一誠実ビル 6F
+          </p>
+          <a href="https://maps.app.goo.gl/rLp2iKSWZ598uAHM7" target="_blank" rel="noopener" class="map">GoogleMap</a>
+        </div>
+        <div class="information-2">
+          <p class="information-2-title information-text">お問い合わせ</p>
+          <a href="tel:0364170410" class="information-text"></a>TEL: 03-6417-0410</p>
+          <p class="information-text"><a href="mailto:recruit@success-1.co.jp">Email: recruit@success-1.co.jp</a></p>
+          <p class="information-text">受付時間: 平日 10:00-17:00</p>
+        </div>
+        <div class="information-3">
+          <a href="https://www.success-1.co.jp/" target="_blank" rel="noopener" class="information-text">会社HP</a>
+          <a href="https://www.success-1.co.jp/company.html" target="_blank" rel="noopener" class="information-text">会社概要</a>
+          <a href="https://www.success-1.co.jp/business.html" target="_blank" rel="noopener" class="information-text">業務内容</a>
+          <a href="https://www.success-1.co.jp/recruit.html" target="_blank" rel="noopener" class="information-text">採用情報</a>
+        </div>
+        <div class="information-4">
+          <div><a href="https://iit.or.jp" target="_blank" rel="noopener"><img src="./img/wh_iit_logo.svg" alt=""></a></div>
+          <div class="information-4-img2"><a href="https://www.jiet.or.jp"  target="_blank" rel="noopener"><img src="./img/JIETlogo 1.svg" alt=""></a></div>
+        </div>
+        <div class="information-5">
+          <div class="information-5-img">
+            <a href="#hero"><img src="./img/top-btn.svg" alt="topへ画像" class="default-img"></a>
+            <a href="#hero"><img src="./img/top-btn-hover.svg" alt="topへ画像" class="hover-img"></a>
+          </div>
+        </div>
+      </div>
+      <small class="copyright">Copyright &copy;2025 SUCCESS Co., Ltd.</small>
+
+    </footer>
+    <script src="./js/before-chart.js"></script>
+    <script src="./js/after-chart.js"></script>
+    <script src="./js/pop-up.js"></script>
+    <script src="./js/form.js"></script>
+  </body>
+</html>
