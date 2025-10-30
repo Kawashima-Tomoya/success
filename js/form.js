@@ -13,7 +13,7 @@ radioButtons.forEach((radio) => {
         subjectField.value = "【中途採用】エントリーのお願い";
         break;
       case "その他":
-        subjectField.value = "【その他】エントリーのお願い";
+        subjectField.value = "【その他】お問い合わせ";
         break;
     }
   });
