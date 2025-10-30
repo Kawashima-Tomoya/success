@@ -8,17 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;500&family=Shippori+Antique&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./img/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
   </head>
   <body>
     <header class="site-header">
         <div class="header-inner">
-            <a href="/index.html" class="logo">
+            <a href="#top" class="logo">
                 <img src="./img/logo.svg" alt="株式会社SUCCESS ロゴ" width="400">
             </a>
 
             <nav class="global-nav">
-                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">メニュー</button>
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav"></button>
                 <ul id="main-nav" class="nav-list">
                     <li><a href="#hero">TOP</a></li>
                     <li><a href="#strength">SUCCESSについて</a></li>
@@ -26,6 +27,30 @@
                     <li><a href="#recruitment">募集要項</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#form" class="btn header-btn">エントリーする</a></li>
+
+                    <div class="links">
+                      <a href="https://page.line.me/325chyvj?oat_content=url&openQrModal=true" class="sns-box">
+                        <div class="sns-icon"><img src="./img/Line.svg" alt=""></div>
+                        <div class="sns-caption">
+                          <p class="sns-text line">無料キャリア相談実施中！</p>
+                          <h3 class="sns-title line">公式LINE</h3>
+                        </div>
+                      </a>
+                      <a href="https://note.com/success_note0311" class="sns-box">
+                        <div class="sns-icon"><img src="./img/note.svg" alt=""></div>
+                        <div class="sns-caption">
+                          <p class="sns-text">IT技術コラム配信中！</p>
+                          <h3 class="sns-title">公式note</h3>
+                        </div>
+                      </a>
+                      <a href="https://newsuccess.hatenablog.com/" class="sns-box">
+                        <div class="sns-icon"><img src="./img/blog.svg" alt=""></div>
+                        <div class="sns-caption">
+                          <p class="sns-text">会社の雰囲気をお伝え！</p>
+                          <h3 class="sns-title">社長ブログ</h3>
+                        </div>
+                      </a>
+                  </div>
                 </ul>
             </nav>
         </div>
@@ -56,7 +81,7 @@
             信頼×技術力で<br>
             あなたの<span class="bg-yellow">未来</span>も本気で考えるIT会社
           </h2>
-          <a href="#form" class="btn hero-btn">エントリーする</a>
+          <a href="#form" class="hero-btn">エントリーする</a>
         </div>
       </section>
 
@@ -64,18 +89,18 @@
       <section id="worry" class="worry section">
         <div class="container">
           <div class="worry-inner">
-            <h2 class="worry-title title">未経験でエンジニアって・・・・・</h2>
+            <h2 class="worry-title title">「未経験でエンジニア」こんなイメージありませんか？</h2>
             <div class="worry-box">
               <div><img src="./img/worry-1.svg" alt="キャリアに悩む男性の画像"></div>
-              <p class="worry-box-text">ずっと同じ作業でキャリアアップしにくい？</p>
+              <p class="worry-box-text">ずっと<span class="blue">同じ作業</span>でキャリアアップしにくい？</p>
             </div>
             <div class="worry-box reverse">
               <div><img src="./img/worry-2.svg" alt="お金がなくて悲しむ男性の画像"></div>
-              <p class="worry-box-text">頑張っても給料が上がらない？</p>
+              <p class="worry-box-text">頑張っても<span class="blue">給料</span>が上がらない？</p>
             </div>
             <div class="worry-box">
               <div><img src="./img/worry-3.svg" alt="自分の時間がなくて焦る女性の画像"></div>
-              <p class="worry-box-text">残業が多そう・・・</p>
+              <p class="worry-box-text"><span class="blue">残業</span>が多くてプライベートがほとんどなさそう・・・・・</p>
             </div>
           </div>
         </div>
@@ -84,7 +109,7 @@
       <!-- development  -->
       <section id="development" class="development section">
         <div class="container">
-          <h2 class="development-title title">SUCCESSならこんなに成長できる</h1>
+          <h2 class="development-title title">SUCCESSならあなたの「安心と挑戦」どちらもサポートします。</h1>
           <div class="chart-box">
             <div id="chart-container-before" class="chart"></div>
             <div id="chart-container-after" class="chart"></div>
@@ -102,7 +127,7 @@
               </p>
               <p class="development-text">
                 多くの社員が未経験から入社していますが、
-                2025年にはミドルスキル※以上の社員が54％に達し、
+                2025年にはミドルスキル<span class="kome">※</span>以上の社員が54％に達し、
                 <span class="blue">会社全体が成長</span>し続けています。
               </p>
               <p class="development-text annotation">
@@ -130,11 +155,16 @@
           <h2 class="strength-title title">SUCCESSの強み</h2>
             <div class="strength-box reverse">
               <div class="strength-text-box">
-                <h3 class="strength-box-title">信頼があるから、挑戦できる</h3>
+                <h3 class="strength-box-title">
+                  信頼があるから、挑戦できる<br>
+                  挑戦したら、給与も上がる。
+                </h3>
                 <p class="strength-box-text">
                   SUCCESSは2025年に創業38周年を迎えました。<br>
-                  その確かな技術力から、大手企業を中心に高い信頼をいただいており、<br>
-                  だからこ未経験でも挑戦的なプロジェクトに参加することができます。
+                  その確かな技術力から、大手企業を中心に高い信頼をいただいており、
+                  だからこそ未経験でも挑戦的なプロジェクトに参加し、経験を積めます。
+                  そしてスキルの成長はキャリア面談を通じて給与にも反映されるため、
+                  頑張りを実感しやすい環境です。
                 </p>
               </div>
               <div class="strength-box-img"><img src="./img/uketsuke.png" alt="受付の画像"></div>
@@ -150,7 +180,7 @@
                   もちろん各種資格手当もございます。
                 </p>
               </div>
-              <div class="strength-box-img"><img src="./img/support (2).png" alt="社員の画像"></div>
+              <div class="strength-box-img"><img src="./img/support.png" alt="社員の画像"></div>
             </div>
             <div class="strength-box reverse">
               <div class="strength-text-box">
@@ -164,7 +194,7 @@
               <div class="strength-box-img"><img src="./img/office.png" alt="オフィスの画像"></div>
             </div>
           </div>
-          <div class="button-box"><a href="#" class="btn btn-entry">エントリーする</a></div>
+          <div class="button-box"><a href="#form" class="btn btn-entry">エントリーする</a></div>
         </div>
       </section>
 
@@ -189,7 +219,7 @@
               <div class="career-card-icon"><img src="./img/badge02.svg" alt=""></div>
               <p class="career-card-num">1年目</p>
               <h3 class="career-card-title">基礎固め</h3>
-              <p class="career-card-flow">ヘルプデスクで知識を本物に</p>
+              <p class="career-card-flow">知識を本物に</p>
               <p class="career-card-detail">
                 ・ヘルプデスク<br>
                 ・インフラ運用・保守<br>
@@ -239,7 +269,7 @@
             </div>
           </div>
           <p class="career-text">図はあくまで一例です。入社後はぜひあなたのなりたい姿やキャリアのイメージをお聞かせください。</p>
-          <div class="career-img"><img src="./img/Frame 26.svg" alt=""></div>
+          <div class="career-img"><img src="./img/consulting.svg" alt=""></div>
         </div>
        </section>
 
@@ -249,12 +279,12 @@
           <h2 class="voice-title title">先輩たちの声</h2>
           <div class="voices">
             <div class="voice-box">
-              <div class="voice-box-img"><img src="./img/Frame 26.svg" alt=""></div>
+              <div class="voice-box-img"><img src="./img/voice1.svg" alt=""></div>
               <p class="voice-box-name">新卒採用 Aさん</p>
               <div class="voice-box-caption">
                 <h3 class="voice-box-title">安心して相談できる雰囲気が<br>背中を押してくれます。</h3>
                 <p class="voice-box-text">
-                  社員の方々の交流が多く、なんでもも気軽に相談できる和やかな空気が気に入っています。
+                  社員の方々の交流が多く、なんでも気軽に相談できる和やかな空気が気に入っています。
                 </p>
               </div>
               <div class="voice-box-caption">
@@ -271,7 +301,7 @@
               </div>
             </div>
             <div class="voice-box">
-              <div class="voice-box-img"><img src="./img/Frame 26.svg" alt=""></div>
+              <div class="voice-box-img"><img src="./img/voice2.svg" alt=""></div>
               <p class="voice-box-name">新卒採用 Bさん</p>
               <div class="voice-box-caption">
                 <h3 class="voice-box-title">安定があるから変化を楽しめる</h3>
@@ -413,7 +443,7 @@
               </p>
             </div>
           </div>
-          <div class="button-box"><a href="#" class="btn btn-entry">エントリーする</a></div>
+          <div class="button-box"><a href="#form" class="btn btn-entry">エントリーする</a></div>
         </div>
       </section>
 
@@ -437,55 +467,14 @@
             </details>
             <details class="accordion-001">
                 <summary><span class="q"><img src="./img/question.svg" alt=""></span>最初に携わる仕事を教えてください。</summary>
-                <p>A常駐先によりますが、未経験の場合はサーバーに関するヘルプデスクの仕事や、サーバー運用を行います。ゆくゆくはクラウドの設計構築などにも携わっていただきます。</p>
+                <p>常駐先によりますが、未経験の場合はサーバーに関するヘルプデスクの仕事や、サーバー運用を行います。ゆくゆくはクラウドの設計構築などにも携わっていただきます。</p>
             </details>
             <details class="accordion-001">
                 <summary><span class="q"><img src="./img/question.svg" alt=""></span>どんな人が向いていますか？</summary>
-                <p>A知識に対して素直で、向上心のある方はキャリアアップにスピード感があります。バックグラウンドは特にこだわりません。弊社には文系や他業界から未経験で入社し、エンジニアとして最前線で活躍している社員も多数おります。</p>
+                <p>知識に対して素直で、向上心のある方はキャリアアップにスピード感があります。バックグラウンドは特にこだわりません。弊社には文系や他業界から未経験で入社し、エンジニアとして最前線で活躍している社員も多数おります。</p>
             </details>
         
             <button class="btn more-btn" id="moreButton">さらに見る</button>
-
-
-            <!-- <details class="accordion-001">
-                <summary><span class="q"><img src="./img/question.svg" alt=""></span>文系出身でも応募は可能ですか。</summary>
-                <p>もちろん可能です。弊社には文系や他業界から未経験で入社し、エンジニアとして最前線で活躍している社員も多数おります。</p>
-            </details>
-            <details class="accordion-001">
-                <summary><span class="q"><img src="./img/question.svg" alt=""></span>貴社では女性はどのように活躍していますか？</summary>
-                <p>代表取締役社長が女性であり、その他経理1名、エンジニアが5名とまだ少ないですが、働きやすい環境を整えています。産休や育休も問題なく取得いただけます。</p>
-            </details>
-            <details class="accordion-001">
-                <summary><span class="q"><img src="./img/question.svg" alt=""></span>イチオシの福利厚生について教えてください。</summary>
-                <p>定期健康診断の際に希望者は人間ドックを受診できます！そのほかご家族参加OKの社員旅行や、社内スポーツイベントなども企画しております。</p>
-            </details>
-            <details class="accordion-001">
-                <summary><span class="q"><img src="./img/question.svg" alt=""></span>社員の平均年齢は何歳ですか？</summary>
-                <p>現在の平均年齢は37歳です。</p>
-            </details>
-            <details class="accordion-001">
-                <summary><span class="q"><img src="./img/question.svg" alt=""></span>貴社で働く未経験の方の前職を教えてください。</summary>
-                <p>営業・介護士・美容師・フリーカメラマンなど、幅広い方が未経験から転職してエンジニアとして働いています。</p>
-            </details>
-            <details class="accordion-001">
-                <summary><span class="q"><img src="./img/question.svg" alt=""></span>主な常駐先はどのあたりですか？</summary>
-                <p>多くは都内近郊ですが、自宅から無理のない範囲で通える先をヒアリングして決めていきます。</p>
-            </details>
-            <details class="accordion-001">
-                <summary><span class="q"><img src="./img/question.svg" alt=""></span>出社とリモートワークの割合を教えてください。</summary>
-                <p>
-                  ヘルプデスクをお任せする場合は出社が中心となり、サーバー構築の案件ではリモート勤務もあります。
-                  あくまで常駐先現場の方針によるため、案件によって様々です。
-                </p>
-            </details>
-            <details class="accordion-001">
-                <summary><span class="q"><img src="./img/question.svg" alt=""></span>貴社で取得を推奨している資格はありますか。</summary>
-                <p></p>
-            </details>
-            <details class="accordion-001">
-                <summary><span class="q"><img src="./img/question.svg" alt=""></span>SUCCESSと他のSES企業との違いを教えてください。</summary>
-                <p>技術力の高さはもちろん、大手企業顧客からの信頼と、社員のキャリア支援力には自信があります。　</p>
-            </details> -->
             <div class="popup-overlay" id="popupOverlay">
               <div class="popup-content">
                   <button class="close-button" id="closeButton">×</button>
@@ -506,7 +495,7 @@
                       </div>
                       <div class="item">
                         <h2 class="item-title">平均勤続年数を教えてください。</h2>
-                        <p class="item-text">約15年です。</p>
+                        <p class="item-text">約10年です。</p>
                       </div>
                       <div class="item">
                         <h2 class="item-title">貴社で働く未経験の方の前職を教えてください。</h2>
@@ -584,7 +573,17 @@
                     <label for="reason">エントリー理由<span class="required">*</span></label>
                     <textarea id="reason" name="reason" required placeholder="エントリー理由をご記入ください"></textarea>
                 </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                        <span class="checkbox-text">
+                            <a href="https://www.success-1.co.jp/img/recruit_privacy_policy.pdf" target="_blank" class="privacy-link">プライバシーポリシー</a>に同意する<span class="required">*</span>
+                        </span>
+                    </label>
+                </div>
                 <button type="submit" class="submit-btn">送信する</button>
+
             </form>
           </div>
         </div>
@@ -618,14 +617,14 @@
 
     <footer>
       <div class="links">
-        <a class="sns-box">
+        <a href="https://page.line.me/325chyvj?oat_content=url&openQrModal=true" class="sns-box">
           <div class="sns-icon"><img src="./img/Line.svg" alt=""></div>
           <div class="sns-caption">
             <p class="sns-text line">無料キャリア相談実施中！</p>
             <h3 class="sns-title line">公式LINE</h3>
           </div>
         </a>
-        <a class="sns-box">
+        <a href="https://note.com/success_note0311" class="sns-box">
           <div class="sns-icon"><img src="./img/note.svg" alt=""></div>
           <div class="sns-caption">
             <p class="sns-text">IT技術コラム配信中！</p>
@@ -677,6 +676,7 @@
       <small class="copyright">Copyright &copy;2025 SUCCESS Co., Ltd.</small>
 
     </footer>
+    <script src="./js/hamburger.js"></script>
     <script src="./js/before-chart.js"></script>
     <script src="./js/after-chart.js"></script>
     <script src="./js/pop-up.js"></script>

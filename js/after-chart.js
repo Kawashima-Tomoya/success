@@ -20,7 +20,7 @@ option = {
       name: 'Access From',
       type: 'pie',
       color: ['#37A2DA', '#32C5E9', '#adc8c8', '#9FE6B8', '#FFDB5C', '#ff9f7f'],
-      radius: '60%',
+      radius: '50%',
       data: [
         { value: 16, name: 'ハイスキル：16' },
         { value: 15, name: 'ミドルスキル：15' },
